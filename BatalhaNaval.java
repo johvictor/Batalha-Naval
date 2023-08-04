@@ -105,6 +105,10 @@ public class BatalhaNaval {
         }
     
     public static boolean TacarBomba(Campo tabu[][], int p[]){
+        if(p[0]>=6 || p[1]>=6){
+            System.out.println("\nCOORDENADA ERRADA!!!\n");
+            return false; 
+        }
        int num1=p[0];
        int num2=p[1];
        if(num1<=5 || num2 <=5){
